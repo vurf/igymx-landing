@@ -1,17 +1,32 @@
-const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.querySelector('#mobile-menu');
 
-if (toggle && nav) {
-  toggle.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!expanded));
-    nav.classList.toggle('open');
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!isOpen));
+    mobileMenu.classList.toggle('is-open', !isOpen);
   });
+}
 
-  nav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
+const faqButtons = document.querySelectorAll('.faq-btn');
+faqButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const panel = document.getElementById(button.getAttribute('aria-controls'));
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+
+    button.setAttribute('aria-expanded', String(!expanded));
+    if (!panel) return;
+
+    if (!expanded) {
+      panel.style.maxHeight = `${panel.scrollHeight}px`;
+    } else {
+      panel.style.maxHeight = '0px';
+    }
   });
+});
+
+const year = document.getElementById('year');
+if (year) {
+  year.textContent = String(new Date().getFullYear());
 }

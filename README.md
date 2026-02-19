@@ -1,31 +1,25 @@
-# iGym X Landing
+# iGym X Landing (GitHub Pages)
 
-Статический лендинг для App Store Connect (Support URL + Privacy Policy URL).
+Лендинг и юридические страницы iGym X для публикации через GitHub Pages.
 
-## Публикация на GitHub Pages
+## Что внутри
+- `/index.html` — главная страница (RU) с поддержкой, FAQ и CTA.
+- `/privacy.html` — политика конфиденциальности (включая HealthKit/Apple Health).
+- `/terms.html` — пользовательское соглашение.
+- `/assets/styles.css` и `/assets/app.js` — стили и интерактивность.
 
-1. Откройте **Settings → Pages**.
-2. В разделе **Build and deployment** выберите:
-   - **Source:** `Deploy from a branch`
-   - **Branch:** `main` (или нужная ветка), папка `/ (root)`
-3. Сохраните и дождитесь публикации.
+## Как включить GitHub Pages
+1. Откройте репозиторий на GitHub.
+2. Перейдите в **Settings → Pages**.
+3. В **Build and deployment** выберите:
+   - **Source:** Deploy from a branch
+   - **Branch:** `main` (или ваш production-branch), папка `/ (root)`
+4. Сохраните настройки и дождитесь публикации.
 
-## Рекомендуемые URL для App Store Connect
+## Какие URL указать в App Store Connect
+- **Marketing URL:** `https://igymx.ru/`
+- **Support URL:** `https://igymx.ru/#support`
+- **Privacy Policy URL:** `https://igymx.ru/privacy.html`
 
-- **Support URL (RU):** `https://<your-domain>/#support`
-- **Support URL (EN):** `https://<your-domain>/index-en.html#support`
-- **Privacy Policy URL (RU):** `https://<your-domain>/privacy.html`
-- **Privacy Policy URL (EN):** `https://<your-domain>/privacy-en.html`
-
-## Файлы
-
-- `index.html` — RU лендинг
-- `index-en.html` — EN лендинг
-- `privacy.html` / `privacy-en.html` — полная политика конфиденциальности
-- `user-agreement.html` / `user-agreement-en.html` — пользовательское соглашение
-
-## Важно перед релизом
-
-- Замените `href="#"` у кнопок App Store на реальную ссылку.
-- Обновите плейсхолдер даты `Обновлено: <MONTH> <YEAR>`.
-- При необходимости замените текстовые плейсхолдеры в блоке "Смотрите в действии" на реальные скриншоты (тег `<img>` или `picture`).
+## TODO перед релизом
+- Заменить `#` у кнопки App Store на реальную ссылку из App Store Connect.
