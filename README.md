@@ -1,19 +1,31 @@
-# iGym X: Силовой трекер — Landing (GitHub Pages)
+# iGym X Landing
 
-Статический сайт без сборки: `index.html`, `privacy.html`, а также английские версии `index-en.html` и `privacy-en.html`.
+Статический лендинг для App Store Connect (Support URL + Privacy Policy URL).
 
-## Публикация через GitHub Pages
-1. Откройте репозиторий на GitHub.
-2. Перейдите в **Settings → Pages**.
-3. В разделе **Build and deployment** выберите:
-   - **Source**: Deploy from branch
-   - **Branch**: `main`
-   - **Folder**: `/ (root)`
-4. Нажмите **Save** и дождитесь публикации.
+## Публикация на GitHub Pages
 
-## Что указывать в App Store Connect
-- **Support URL**: `https://<username>.github.io/<repo>/`
-- **Privacy Policy URL**: `https://<username>.github.io/<repo>/privacy.html`
+1. Откройте **Settings → Pages**.
+2. В разделе **Build and deployment** выберите:
+   - **Source:** `Deploy from a branch`
+   - **Branch:** `main` (или нужная ветка), папка `/ (root)`
+3. Сохраните и дождитесь публикации.
 
-## Локальный просмотр
-Откройте `index.html` в браузере или запустите любой простой статический сервер.
+## Рекомендуемые URL для App Store Connect
+
+- **Support URL (RU):** `https://<your-domain>/#support`
+- **Support URL (EN):** `https://<your-domain>/index-en.html#support`
+- **Privacy Policy URL (RU):** `https://<your-domain>/privacy.html`
+- **Privacy Policy URL (EN):** `https://<your-domain>/privacy-en.html`
+
+## Файлы
+
+- `index.html` — RU лендинг
+- `index-en.html` — EN лендинг
+- `privacy.html` / `privacy-en.html` — полная политика конфиденциальности
+- `user-agreement.html` / `user-agreement-en.html` — пользовательское соглашение
+
+## Важно перед релизом
+
+- Замените `href="#"` у кнопок App Store на реальную ссылку.
+- Обновите плейсхолдер даты `Обновлено: <MONTH> <YEAR>`.
+- При необходимости замените текстовые плейсхолдеры в блоке "Смотрите в действии" на реальные скриншоты (тег `<img>` или `picture`).
