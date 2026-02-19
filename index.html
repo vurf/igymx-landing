@@ -3,123 +3,142 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>iGym X: Силовой трекер — тренировки, прогресс, Apple Health</title>
-  <meta name="description" content="iGym X: Силовой трекер — простой и быстрый журнал тренировок: упражнения, подходы, повторения, вес, история и синхронизация с Apple Health.">
-  <link rel="canonical" href="https://example.com/index.html">
-  <link rel="alternate" hreflang="ru" href="/index.html">
-  <link rel="alternate" hreflang="en" href="/index-en.html">
+  <title>iGym X: Силовой трекер — трекер тренировок для iPhone</title>
+  <meta name="description" content="iGym X: удобный трекер силовых тренировок: подходы, веса, отдых и прогресс.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="iGym X: Силовой трекер">
-  <meta property="og:description" content="Силовые тренировки, прогресс и Apple Health в одном приложении.">
-  <meta property="og:image" content="/assets/og-image.svg">
-  <meta property="og:url" content="https://example.com/index.html">
-  <link rel="icon" href="/assets/app-icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"iGym X: Силовой трекер","applicationCategory":"HealthApplication","operatingSystem":"iOS","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Трекер силовых тренировок с поддержкой Apple Health."}</script>
+  <meta property="og:description" content="Удобный трекер силовых тренировок: подходы, веса, отдых и прогресс.">
+  <meta property="og:image" content="assets/og-image.svg">
+  <meta property="og:url" content="https://igymx.ru/">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/app.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"iGym X: Силовой трекер",
+    "operatingSystem":"iOS",
+    "applicationCategory":"HealthApplication",
+    "description":"Удобный трекер силовых тренировок: подходы, веса, отдых и прогресс.",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+  }
+  </script>
 </head>
 <body>
-<a href="#main" class="skip-link">Перейти к содержимому</a>
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a class="brand" href="#top" aria-label="На главную"><img src="/assets/app-icon.svg" alt="Логотип iGym X">iGym X</a>
-    <nav class="main-nav" aria-label="Основная навигация">
-      <ul>
-        <li><a href="#features">Возможности</a></li>
-        <li><a href="#screens">Скриншоты</a></li>
-        <li><a href="#support">Поддержка</a></li>
-        <li><a href="#privacy">Конфиденциальность</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </nav>
-    <div class="lang-switch" aria-label="Выбор языка"><a class="active" href="/index.html">RU</a><a href="/index-en.html">EN</a></div>
-  </div>
-</header>
-<main id="main" class="container">
-  <section class="hero" id="top">
-    <h1>iGym X: Силовой трекер</h1>
-    <p>Быстро записывайте тренировки, отслеживайте рабочие веса и анализируйте прогресс. Приложение создано для силового тренинга и интеграции с Apple Health / HealthKit.</p>
-    <div class="cta-row">
-      <a href="#" class="button primary" aria-label="Скачать в App Store (ссылка будет добавлена)">Скачать в App Store</a>
-      <a href="mailto:support@igymx.app" class="button secondary">Написать в поддержку</a>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="iGym X главная">iGym X</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Открыть меню">☰</button>
+      <nav id="main-menu" class="nav" aria-label="Главное меню">
+        <!-- TODO: Вставьте реальную ссылку App Store -->
+        <a class="btn btn-primary" href="#">Скачать в App Store</a>
+        <a class="btn btn-ghost" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#support">Support</a>
+        <a class="lang-toggle" href="index-en.html" lang="en" hreflang="en">EN</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <section id="features">
-    <h2>Возможности</h2>
-    <div class="grid features">
-      <article class="card"><h3>Тренировки по дням</h3><p>Создавайте тренировки и шаблоны под ваши цели.</p></article>
-      <article class="card"><h3>Библиотека упражнений</h3><p>Собственные и базовые упражнения с удобным поиском.</p></article>
-      <article class="card"><h3>Подходы, повторения, вес</h3><p>Быстрый ввод данных без лишних экранов.</p></article>
-      <article class="card"><h3>Таймер отдыха</h3><p>Контролируйте паузы между подходами.</p></article>
-      <article class="card"><h3>История тренировок</h3><p>Смотрите прошлые сессии и динамику по упражнениям.</p></article>
-      <article class="card"><h3>Прогресс</h3><p>Отслеживайте рост рабочих весов и объема.</p></article>
-      <article class="card"><h3>Офлайн-режим</h3><p>Основная функциональность доступна без интернета.</p></article>
-      <article class="card"><h3>Локальное/облачное хранение</h3><p>Данные сохраняются на устройстве; варианты синхронизации зависят от версии приложения.</p></article>
-      <article class="card"><h3>Темная тема + Apple Health</h3><p>Комфортный интерфейс и синхронизация фитнес-данных при разрешении пользователя.</p></article>
+  <main id="main">
+    <section class="hero section">
+      <div class="container narrow center">
+        <h1>iGym X: Силовой трекер</h1>
+        <p class="subtitle">Удобный трекер силовых тренировок: подходы, веса, отдых и прогресс.</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="#">Скачать в App Store</a>
+          <a class="btn btn-ghost" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Смотрите в действии</h2>
+        <p class="section-note">Свайпните, чтобы посмотреть экраны приложения.</p>
+        <div class="carousel" aria-label="Скриншоты приложения">
+          <article class="screen-card" aria-label="Экран приложения 1"><div class="screen-placeholder"><span>Скриншот 1</span></div></article>
+          <article class="screen-card" aria-label="Экран приложения 2"><div class="screen-placeholder"><span>Скриншот 2</span></div></article>
+          <article class="screen-card" aria-label="Экран приложения 3"><div class="screen-placeholder"><span>Скриншот 3</span></div></article>
+          <article class="screen-card" aria-label="Экран приложения 4"><div class="screen-placeholder"><span>Скриншот 4</span></div></article>
+          <article class="screen-card" aria-label="Экран приложения 5"><div class="screen-placeholder"><span>Скриншот 5</span></div></article>
+          <article class="screen-card" aria-label="Экран приложения 6"><div class="screen-placeholder"><span>Скриншот 6</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Функции</h2>
+        <ul class="feature-grid">
+          <li><h3>Тренировки и планы</h3><p>Собирайте собственные программы и повторяйте шаблоны.</p></li>
+          <li><h3>Подходы/повторы/вес</h3><p>Фиксируйте каждый подход с нужной нагрузкой.</p></li>
+          <li><h3>Таймер отдыха</h3><p>Не теряйте ритм между подходами и упражнениями.</p></li>
+          <li><h3>История тренировок</h3><p>Быстро возвращайтесь к прошлым результатам.</p></li>
+          <li><h3>Прогресс и замеры</h3><p>Следите за динамикой рабочих весов и объёмов.</p></li>
+          <li><h3>База упражнений</h3><p>Используйте каталог движений для разных групп мышц.</p></li>
+          <li><h3>Тёмная тема</h3><p>Комфортные тренировки в любое время суток.</p></li>
+          <li><h3>Apple Health / HealthKit</h3><p>Опциональная синхронизация тренировок и фитнес-метрик.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+          <details><summary>Подходит ли приложение для новичков?</summary><p>Да. Можно начать с простых планов и постепенно усложнять тренировки.</p></details>
+          <details><summary>Нужен ли интернет на тренировке?</summary><p>Основной функционал доступен локально на устройстве.</p></details>
+          <details><summary>Можно ли редактировать прошлые тренировки?</summary><p>Да, вы можете корректировать историю и заметки после занятия.</p></details>
+          <details><summary>Как работает синхронизация с HealthKit?</summary><p>Доступ запрашивается только с вашего разрешения и может быть отключён в любой момент в настройках iOS.</p></details>
+          <details><summary>Используются ли данные HealthKit для рекламы?</summary><p>Нет. Данные HealthKit не используются для рекламных целей и не продаются.</p></details>
+          <details><summary>Как удалить данные?</summary><p>Можно удалить локальные данные в приложении и отправить запрос на удаление по email поддержки.</p></details>
+          <details><summary>Есть ли аккаунт?</summary><p>Если вы не используете аккаунт, данные хранятся на устройстве по умолчанию.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container narrow center">
+        <h2>Готовы начать тренировки с iGym X?</h2>
+        <div class="button-row">
+          <a class="btn btn-primary" href="#">Скачать в App Store</a>
+          <a class="btn btn-ghost" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="support">
+      <div class="container narrow">
+        <h2>Support</h2>
+        <p>Email: <a href="mailto:support@igymx.ru">support@igymx.ru</a></p>
+        <p>Опиши проблему, приложи скриншоты, укажи модель iPhone, версию iOS и версию приложения.</p>
+        <p>Обновлено: <MONTH> <YEAR></p>
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="container narrow">
+        <h2>Privacy Policy (кратко)</h2>
+        <p>iGym X уважает вашу конфиденциальность. HealthKit подключается только по вашему разрешению.</p>
+        <p>Мы можем читать/записывать данные о тренировках и фитнес-метриках в рамках предоставленных прав.</p>
+        <p>Мы не продаём персональные данные и не используем данные HealthKit для рекламы.</p>
+        <p>Полная версия: <a href="privacy.html">privacy.html</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2026 iGym X</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="user-agreement.html">User Agreement</a>
+      </div>
     </div>
-  </section>
-
-  <section id="screens">
-    <h2>Скриншоты</h2>
-    <div class="grid shots">
-      <div class="shot">Экран тренировки</div>
-      <div class="shot">Ввод подходов</div>
-      <div class="shot">История и прогресс</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Данные и конфиденциальность</h2>
-    <article class="card">
-      <p><strong>Коротко:</strong> мы не продаем персональные данные. Доступ к Apple Health / HealthKit запрашивается только с вашего разрешения, его можно отключить в настройках iOS в любой момент. Данные HealthKit используются только для работы функций приложения.</p>
-      <p><a href="/privacy.html">Открыть полную Политику конфиденциальности</a></p>
-    </article>
-  </section>
-
-  <section id="support">
-    <h2>Поддержка</h2>
-    <article class="card">
-      <p><strong>Email (основной канал):</strong> <a href="mailto:support@igymx.app">support@igymx.app</a></p>
-      <p><strong>Telegram (дополнительно):</strong> <a href="https://t.me/igymx">t.me/igymx</a></p>
-      <p><strong>Как быстрее получить помощь:</strong><br>1) Кратко опишите проблему.<br>2) Приложите скриншоты.<br>3) Укажите версию iOS и версию приложения.</p>
-      <p class="meta">Обычно отвечаем в течение 1–3 рабочих дней.<br>Версия приложения: 1.0.x (placeholder) · Обновлено: 2026-01-01 (placeholder)</p>
-      <p><a href="#faq">Перейти в раздел «Частые вопросы»</a></p>
-    </article>
-  </section>
-
-  <section id="privacy">
-    <h2>Политика конфиденциальности</h2>
-    <article class="card">
-      <h3>1. Коротко</h3>
-      <ul><li>Мы не продаем персональные данные.</li><li>Доступ к данным Здоровья — только с разрешения пользователя, которое можно отозвать в настройках iOS.</li><li>Данные HealthKit используются только для функциональности приложения.</li></ul>
-      <h3>2. Какие данные можем собирать/хранить</h3>
-      <ul><li>Данные тренировок, введенные пользователем: упражнения, подходы, повторения, вес, длительность, заметки.</li><li>Технические данные устройства: модель устройства, версия iOS, версия приложения, журналы сбоев (если есть).</li><li>Опциональная обезличенная аналитика использования (если включена).</li></ul>
-      <h3>3. HealthKit / Apple Health</h3>
-      <p>Приложение может читать/записывать связанные с фитнесом данные (например, тренировки, активную энергию, показатели тела) только если вы предоставили разрешение.</p>
-      <ul><li>HealthKit-данные не используются для рекламы или брокерских операций с данными.</li><li>HealthKit-данные не передаются третьим лицам, кроме случаев, необходимых для работы приложения (как правило, таких передач нет).</li><li>По умолчанию данные HealthKit обрабатываются на устройстве.</li></ul>
-      <h3>4–11. Использование, передача, хранение и удаление</h3>
-      <p>Данные используются для работы функций, стабильности и поддержки пользователей. Продажи данных нет; возможна ограниченная передача минимальных технических данных сервис-провайдерам (например, аналитика/краш-репорты), но не данных HealthKit. Если в приложении нет аккаунта, данные обычно хранятся на устройстве. Удаление данных: используйте функции приложения и/или запрос на <a href="mailto:support@igymx.app?subject=%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">support@igymx.app</a> с темой «Удаление данных». Мы применяем разумные меры безопасности, но не можем гарантировать абсолютную защиту. Сервис не предназначен для детей до 13 лет. Для международных пользователей применяются общие правила обработки данных в рамках действующего законодательства. Изменения политики публикуются на этой странице.</p>
-      <p class="meta">Дата обновления политики: 2026-01-01</p>
-      <p><a href="/privacy.html">Открыть отдельную страницу privacy.html</a></p>
-    </article>
-  </section>
-
-  <section id="faq" class="faq">
-    <h2>FAQ</h2>
-    <details><summary>Нужен ли аккаунт для использования?</summary><p>Обычно нет: основные функции доступны без создания аккаунта.</p></details>
-    <details><summary>Как отключить доступ к Apple Health?</summary><p>Откройте iOS: Настройки → Конфиденциальность и безопасность → Здоровье и измените разрешения для приложения.</p></details>
-    <details><summary>Используются ли мои данные для рекламы?</summary><p>Нет, данные HealthKit не используются для рекламы.</p></details>
-    <details><summary>Можно ли пользоваться приложением без интернета?</summary><p>Да, основные функции трекера работают офлайн.</p></details>
-    <details><summary>Как удалить данные?</summary><p>Используйте функцию удаления в приложении или отправьте запрос на support@igymx.app с темой «Удаление данных».</p></details>
-    <details><summary>Почему данные не синхронизируются с Apple Health?</summary><p>Проверьте разрешения HealthKit и убедитесь, что они выданы для нужных типов данных.</p></details>
-    <details><summary>Как сообщить об ошибке?</summary><p>Напишите в поддержку, приложите скриншоты, версию iOS и версию приложения.</p></details>
-  </section>
-</main>
-<footer class="footer">
-  <div class="container">
-    <div class="footer-links"><a href="/index.html">Главная</a><a href="/privacy.html">Конфиденциальность</a><a href="/index-en.html">English</a></div>
-    <p>© 2026 iGym X. Все права защищены.</p>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
