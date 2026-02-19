@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://igymx.ru/</loc></url>
-  <url><loc>https://igymx.ru/index-en.html</loc></url>
-  <url><loc>https://igymx.ru/privacy.html</loc></url>
-  <url><loc>https://igymx.ru/privacy-en.html</loc></url>
-  <url><loc>https://igymx.ru/user-agreement.html</loc></url>
-  <url><loc>https://igymx.ru/user-agreement-en.html</loc></url>
+  <url>
+    <loc>https://igymx.ru/</loc>
+  </url>
+  <url>
+    <loc>https://igymx.ru/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://igymx.ru/terms.html</loc>
+  </url>
 </urlset>
