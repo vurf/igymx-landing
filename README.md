@@ -1,25 +1,19 @@
 # iGym X Landing (GitHub Pages)
 
-Лендинг и юридические страницы iGym X для публикации через GitHub Pages.
+Статический лендинг iGym X и юридические страницы для App Store Connect и GitHub Pages.
 
-## Что внутри
-- `/index.html` — главная страница (RU) с поддержкой, FAQ и CTA.
-- `/privacy.html` — политика конфиденциальности (включая HealthKit/Apple Health).
-- `/terms.html` — пользовательское соглашение.
-- `/assets/styles.css` и `/assets/app.js` — стили и интерактивность.
+## Структура
+- `index.html` — главная RU
+- `index-en.html` — main EN
+- `privacy.html` / `privacy-en.html` — privacy policy (RU/EN)
+- `terms.html` / `terms-en.html` — terms (RU/EN)
+- `assets/styles.css` — единый CSS для всех страниц
+- `assets/app.js` — мобильное меню + FAQ accordion
+- `robots.txt`, `sitemap.xml` — служебные SEO файлы
 
-## Как включить GitHub Pages
-1. Откройте репозиторий на GitHub.
-2. Перейдите в **Settings → Pages**.
-3. В **Build and deployment** выберите:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main` (или ваш production-branch), папка `/ (root)`
-4. Сохраните настройки и дождитесь публикации.
+## App Store Connect URLs
+- Support URL: `https://igymx.ru/#support`
+- Privacy Policy URL: `https://igymx.ru/privacy.html`
 
-## Какие URL указать в App Store Connect
-- **Marketing URL:** `https://igymx.ru/`
-- **Support URL:** `https://igymx.ru/#support`
-- **Privacy Policy URL:** `https://igymx.ru/privacy.html`
-
-## TODO перед релизом
-- Заменить `#` у кнопки App Store на реальную ссылку из App Store Connect.
+## TODO
+- Заменить `#` у App Store CTA на реальную ссылку после публикации приложения.
