@@ -3,156 +3,191 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Simple strength training tracker: sets, weights, rest, and progress.">
   <title>iGym X: Strength Tracker</title>
+  <meta name="description" content="iGym X — simple strength training tracker: sets, weights, rest, and progress.">
+  <meta property="og:title" content="iGym X: Strength Tracker">
+  <meta property="og:description" content="Simple strength training tracker: sets, weights, rest, and progress.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://igymx.ru/index-en.html">
+  <meta property="og:image" content="https://igymx.ru/assets/og-image.svg">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="container header-row">
       <a class="brand" href="/index-en.html">iGym X</a>
-      <nav class="header-nav desktop-nav" aria-label="Site navigation">
+
+      <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#features">Features</a>
         <a href="#faq">FAQ</a>
+        <a href="privacy-en.html">Privacy Policy</a>
         <a href="#support">Support</a>
       </nav>
-      <div class="header-actions">
-        <a class="lang-link" href="/index.html" aria-label="Переключить язык на русский">RU</a>
-        <a class="btn btn-secondary" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
-        <!-- TODO: Replace # with the App Store URL -->
-        <a class="btn btn-primary" href="#">Download on the App Store</a>
+
+      <div class="header-cta desktop-actions">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <a href="index.html" lang="ru">RU</a>
+          <a class="active" href="index-en.html" aria-current="page">EN</a>
+        </div>
+        <a class="btn btn-primary" href="#" aria-label="Download on the App Store">Download on the App Store</a>
+        <a class="btn btn-secondary" href="https://t.me/igymx" target="_blank" rel="noopener">Open Telegram</a>
       </div>
+
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <nav id="mobile-menu" class="container mobile-menu" aria-label="Mobile menu">
-      <a href="#features">Features</a>
-      <a href="#faq">FAQ</a>
-      <a href="#support">Support</a>
-      <a class="lang-link" href="/index.html">RU</a>
-      <a class="btn btn-secondary" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
-      <!-- TODO: Replace # with the App Store URL -->
-      <a class="btn btn-primary" href="#">Download on the App Store</a>
+
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile menu" hidden>
+      <div class="container mobile-menu-inner">
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+        <a href="privacy-en.html">Privacy Policy</a>
+        <a href="#support">Support</a>
+        <a class="btn btn-primary" href="#" aria-label="Download on the App Store">Download on the App Store</a>
+        <a class="btn btn-secondary" href="https://t.me/igymx" target="_blank" rel="noopener">Open Telegram</a>
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <a href="index.html" lang="ru">RU</a>
+          <a class="active" href="index-en.html" aria-current="page">EN</a>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section class="section section--hero" id="hero">
+    <section class="section section-hero">
       <div class="container hero-content">
-        <p class="eyebrow">Strength tracker for iPhone</p>
         <h1>iGym X: Strength Tracker</h1>
-        <p class="subtitle">Simple strength training tracker: sets, weights, rest, and progress.</p>
-        <div class="hero-actions-row">
-          <!-- TODO: Replace # with the App Store URL -->
-          <a class="btn btn-primary" href="#">Download on the App Store</a>
-          <a class="btn btn-secondary" href="https://t.me/igymx" target="_blank" rel="noopener">Open Telegram</a>
+        <p>Simple strength training tracker: sets, weights, rest, and progress.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#">Download on the App Store</a><!-- TODO: replace # with App Store URL -->
+          <a class="btn btn-ghost" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-screens">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-head">
           <h2>See it in Action</h2>
-          <p>Swipe to explore the app screens.</p>
+          <p>Scroll through screenshots to preview the core app flow.</p>
         </div>
-        <div class="screens-carousel" aria-label="App screenshots">
-          <article class="screen-slide"><img src="assets/img/screen-1.svg" alt="Workout program screen"></article>
-          <article class="screen-slide"><img src="assets/img/screen-2.svg" alt="Active workout screen"></article>
-          <article class="screen-slide"><img src="assets/img/screen-3.svg" alt="Rest timer screen"></article>
-          <article class="screen-slide"><img src="assets/img/screen-4.svg" alt="Workout history screen"></article>
-          <article class="screen-slide"><img src="assets/img/screen-5.svg" alt="Progress analytics screen"></article>
-          <article class="screen-slide"><img src="assets/img/screen-6.svg" alt="Body measurements screen"></article>
+        <div class="screens-track" aria-label="iGym X screenshots carousel">
+          <article class="screen-card"><img src="assets/img/screen-1.svg" alt="iGym X training screen 1"></article>
+          <article class="screen-card"><img src="assets/img/screen-2.svg" alt="iGym X training screen 2"></article>
+          <article class="screen-card"><img src="assets/img/screen-3.svg" alt="iGym X training screen 3"></article>
+          <article class="screen-card"><img src="assets/img/screen-4.svg" alt="iGym X training screen 4"></article>
+          <article class="screen-card"><img src="assets/img/screen-5.svg" alt="iGym X training screen 5"></article>
+          <article class="screen-card"><img src="assets/img/screen-6.svg" alt="iGym X training screen 6"></article>
         </div>
+        <p class="swipe-hint">Swipe to explore →</p>
       </div>
     </section>
 
-    <section class="section section--features" id="features">
+    <section class="section section-features" id="features">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-head">
           <h2>Features</h2>
-          <p>Everything you need for easy workout logging and progress tracking.</p>
         </div>
         <div class="features-grid">
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true"></span><h3>Plans and templates</h3><p>Create workouts and save templates for different goals.</p></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true"></span><h3>Quick set logging</h3><p>Log weight, reps, and RPE in a few quick taps.</p></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true"></span><h3>Rest timer</h3><p>Track breaks between sets and stay on pace.</p></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true"></span><h3>Session history</h3><p>Open past workouts and compare loads by date.</p></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true"></span><h3>Progress charts</h3><p>View trends in training volume and working weights.</p></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true"></span><h3>HealthKit integration</h3><p>Share selected data with Apple Health by permission.</p></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true"></span><h3>Exercise library</h3><p>Use a clear catalog for key muscle groups.</p></article>
-          <article class="feature-card"><span class="feature-icon" aria-hidden="true"></span><h3>Dark mode</h3><p>Comfortable interface for early or late sessions.</p></article>
+          <article class="feature-card"><span class="feature-icon">🏋️</span><h3>Workouts & plans</h3><p>Build and reuse training templates for your goals.</p></article>
+          <article class="feature-card"><span class="feature-icon">🔢</span><h3>Sets/reps/weight</h3><p>Log key values in a few taps during each set.</p></article>
+          <article class="feature-card"><span class="feature-icon">⏱️</span><h3>Rest timer</h3><p>Keep your pace between sets with a built-in timer.</p></article>
+          <article class="feature-card"><span class="feature-icon">🗂️</span><h3>Workout history</h3><p>Review past sessions and compare your performance.</p></article>
+          <article class="feature-card"><span class="feature-icon">📈</span><h3>Progress</h3><p>Track strength trends and consistency over time.</p></article>
+          <article class="feature-card"><span class="feature-icon">📏</span><h3>Measurements</h3><p>Store body stats and monitor physical changes.</p></article>
+          <article class="feature-card"><span class="feature-icon">🌙</span><h3>Dark mode</h3><p>Comfortable reading in bright and low-light settings.</p></article>
+          <article class="feature-card"><span class="feature-icon">❤️</span><h3>Apple Health / HealthKit sync</h3><p>Fitness data sync happens only with your permission.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section section--faq" id="faq">
-      <div class="container faq-wrap">
-        <div class="section-heading">
-          <h2>Frequently Asked Questions</h2>
+    <section class="section section-faq" id="faq">
+      <div class="container narrow">
+        <div class="section-head center">
+          <h2>FAQ</h2>
         </div>
-        <div class="faq-list" data-accordion>
+
+        <div class="faq" data-accordion>
           <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">Do I need to register to get started?<span class="chevron" aria-hidden="true"></span></button>
-            <div class="faq-answer"><p>No. Core features are available right after installation, so you can start tracking workouts immediately.</p></div>
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-en-1" id="faq-btn-en-1">
+              <span>Where can I download iGym X?</span><span class="chevron" aria-hidden="true"></span>
+            </button>
+            <div id="faq-en-1" class="faq-answer" role="region" aria-labelledby="faq-btn-en-1" hidden>
+              <p>App Store link is coming soon. The landing currently keeps a placeholder.</p>
+            </div>
           </article>
           <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">Can I import old workouts?<span class="chevron" aria-hidden="true"></span></button>
-            <div class="faq-answer"><p>Yes. The app supports manual transfer of key data: exercises, sets, and working weights.</p></div>
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-en-2" id="faq-btn-en-2">
+              <span>Does the app sync with Apple Health?</span><span class="chevron" aria-hidden="true"></span>
+            </button>
+            <div id="faq-en-2" class="faq-answer" role="region" aria-labelledby="faq-btn-en-2" hidden>
+              <p>Yes, via HealthKit and only after explicit permission in iOS settings.</p>
+            </div>
           </article>
           <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">Is Apple Health supported?<span class="chevron" aria-hidden="true"></span></button>
-            <div class="faq-answer"><p>Yes. Integration uses HealthKit and is enabled only after your explicit consent in iOS settings.</p></div>
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-en-3" id="faq-btn-en-3">
+              <span>Do I need internet access to log workouts?</span><span class="chevron" aria-hidden="true"></span>
+            </button>
+            <div id="faq-en-3" class="faq-answer" role="region" aria-labelledby="faq-btn-en-3" hidden>
+              <p>Core workout tracking works locally on your device.</p>
+            </div>
           </article>
           <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">Will there be an Android version?<span class="chevron" aria-hidden="true"></span></button>
-            <div class="faq-answer"><p>Right now, the main focus is iOS. Platform updates are posted in the iGym X Telegram channel.</p></div>
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-en-4" id="faq-btn-en-4">
+              <span>How can I delete my data?</span><span class="chevron" aria-hidden="true"></span>
+            </button>
+            <div id="faq-en-4" class="faq-answer" role="region" aria-labelledby="faq-btn-en-4" hidden>
+              <p>You can delete data in the app or request deletion by email at support@igymx.ru.</p>
+            </div>
           </article>
           <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">Is HealthKit data used for ads?<span class="chevron" aria-hidden="true"></span></button>
-            <div class="faq-answer"><p>No. HealthKit data is not used for advertising and is not shared with ad platforms.</p></div>
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-en-5" id="faq-btn-en-5">
+              <span>Which devices are supported?</span><span class="chevron" aria-hidden="true"></span>
+            </button>
+            <div id="faq-en-5" class="faq-answer" role="region" aria-labelledby="faq-btn-en-5" hidden>
+              <p>iPhone models running modern iOS versions.</p>
+            </div>
           </article>
           <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">How can I delete my data?<span class="chevron" aria-hidden="true"></span></button>
-            <div class="faq-answer"><p>You can remove local data in the app or send a deletion request by email.</p></div>
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-en-6" id="faq-btn-en-6">
+              <span>How can I contact support?</span><span class="chevron" aria-hidden="true"></span>
+            </button>
+            <div id="faq-en-6" class="faq-answer" role="region" aria-labelledby="faq-btn-en-6" hidden>
+              <p>Email support@igymx.ru or message us on Telegram: @igymx.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--support" id="support">
-      <div class="container support-box">
-        <h2>Support</h2>
-        <p>If you have a question or issue, contact us:</p>
-        <ul>
-          <li>Email: <a href="mailto:support@igymx.ru">support@igymx.ru</a></li>
-          <li>Telegram: <a href="https://t.me/igymx" target="_blank" rel="noopener">t.me/igymx</a></li>
-          <li>For bug reports, include screenshots, iPhone model, iOS version, and app version.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section section--cta">
-      <div class="container">
-        <div class="final-cta">
-          <p class="eyebrow">Ready to start?</p>
-          <h2>Keep your training simple and your progress visible every day.</h2>
-          <div class="hero-actions-row">
-            <!-- TODO: Replace # with the App Store URL -->
-            <a class="btn btn-light" href="#">Download on the App Store</a>
-            <a class="btn btn-ghost" href="https://t.me/igymx" target="_blank" rel="noopener">Ask a question</a>
-          </div>
+    <section class="section section-cta">
+      <div class="container cta-content">
+        <h2>Ready to train consistently?</h2>
+        <p>Install iGym X and keep your strength progress structured and clear.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#">Download on the App Store</a>
+          <a class="btn btn-ghost" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" id="support">
     <div class="container footer-inner">
-      <a href="/privacy-en.html">Privacy Policy</a>
-      <a href="/terms-en.html">User Agreement</a>
+      <section class="support-block" aria-labelledby="support-title">
+        <h2 id="support-title">Support</h2>
+        <p>Email: <a href="mailto:support@igymx.ru">support@igymx.ru</a></p>
+        <p>Telegram: <a href="https://t.me/igymx" target="_blank" rel="noopener">https://t.me/igymx</a></p>
+        <p>Describe your issue, attach screenshots, and include iPhone model, iOS version, and app version.</p>
+      </section>
+
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="/privacy-en.html">Privacy Policy</a>
+        <a href="/terms-en.html">Terms of Use</a>
+      </nav>
       <p>Made with ❤️</p>
+      <p>© 2026 iGym X</p>
     </div>
   </footer>
 
