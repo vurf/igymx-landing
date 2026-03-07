@@ -100,10 +100,10 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(244,247,252,.93);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(167,184,212,.22);
+  background: rgba(0,0,0,.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,.15);
   box-shadow: 0 1px 0 rgba(0,0,0,.08);
 }
 
@@ -118,7 +118,7 @@ h3 {
   font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: #0f1828;
+  color: #fff;
 }
 
 .desktop-nav {
@@ -129,8 +129,17 @@ h3 {
 }
 
 .desktop-nav a,
-.footer-links a,
 .mobile-menu a {
+  color: rgba(255,255,255,.9);
+  font-weight: 600;
+  font-size: .925rem;
+  transition: color var(--transition), text-decoration-color var(--transition);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+}
+
+.footer-links a {
   color: #1a2540;
   font-weight: 600;
   font-size: .925rem;
@@ -141,8 +150,8 @@ h3 {
 }
 
 .desktop-nav a:hover {
-  color: var(--accent);
-  text-decoration-color: var(--accent);
+  color: #fff;
+  text-decoration-color: rgba(255,255,255,.7);
   opacity: 1;
 }
 
@@ -158,23 +167,23 @@ h3 {
   display: inline-flex;
   gap: .2rem;
   padding: .2rem;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255,255,255,.35);
   border-radius: 999px;
-  background: #fff;
+  background: rgba(255,255,255,.12);
 }
 
 .lang-switch a {
   padding: .28rem .65rem;
   border-radius: 999px;
-  color: #4b5567;
+  color: rgba(255,255,255,.75);
   font-size: .875rem;
   font-weight: 700;
   transition: background var(--transition), color var(--transition);
 }
 
 .lang-switch a.active {
-  background: #101828;
-  color: #fff;
+  background: rgba(255,255,255,.9);
+  color: #1a0800;
 }
 
 /* ══════════════════════ BUTTONS ══════════════════════ */
@@ -230,8 +239,8 @@ h3 {
   height: 2.75rem;
   min-width: 44px;
   min-height: 44px;
-  border: 1px solid var(--border);
-  background: #fff;
+  border: 1px solid rgba(255,255,255,.4);
+  background: rgba(255,255,255,.15);
   border-radius: 12px;
   cursor: pointer;
   flex-direction: column;
@@ -245,13 +254,13 @@ h3 {
   display: block;
   width: 1.1rem;
   height: 2px;
-  background: #2d3752;
+  background: #fff;
   border-radius: 2px;
 }
 
 .mobile-menu {
-  border-top: 1px solid rgba(167,184,212,.2);
-  background: rgba(249,251,255,.97);
+  border-top: 1px solid rgba(255,255,255,.15);
+  background: rgba(30,12,0,.92);
   backdrop-filter: blur(12px);
 }
 
@@ -266,7 +275,7 @@ h3 {
 /* ══════════════════════ HERO ══════════════════════ */
 
 .section-hero {
-  background: var(--grad-hero);
+  background: linear-gradient(145deg, #ffbe2e 0%, #f5960a 40%, #d4680c 75%, #9e3d00 100%);
   padding: clamp(4rem, 10vw, 8rem) 0 clamp(3.5rem, 8vw, 7rem);
 }
 
@@ -284,15 +293,15 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: .45rem;
-  background: rgba(255,255,255,.8);
-  border: 1px solid rgba(27,107,255,.18);
-  color: #1a52cc;
+  background: rgba(255,255,255,.2);
+  border: 1.5px solid rgba(255,255,255,.6);
+  color: #fff;
   font-size: .8rem;
   font-weight: 700;
   padding: .32rem .8rem;
   border-radius: 999px;
   margin-bottom: 1.25rem;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(4px);
   letter-spacing: .01em;
 }
 
@@ -300,7 +309,7 @@ h3 {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--accent);
+  background: #fff;
   flex-shrink: 0;
   animation: blink 2.2s ease infinite;
 }
@@ -311,15 +320,14 @@ h3 {
 }
 
 .hero-content h1 {
-  background: linear-gradient(135deg, #0f1828 0%, #1a3a8e 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,.15);
+  -webkit-text-fill-color: #fff;
 }
 
 .hero-content > p {
   margin-top: 1.15rem;
-  color: #39445c;
+  color: rgba(255,255,255,.88);
   font-size: 1.12rem;
   line-height: 1.65;
 }
@@ -340,12 +348,12 @@ h3 {
   color: #fff;
   padding: .55rem 1.25rem;
   border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.18);
+  box-shadow: 0 4px 20px rgba(0,0,0,.3);
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .hero-store-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+  box-shadow: 0 8px 28px rgba(0,0,0,.4);
   opacity: 1;
 }
 .hero-store-icon {
@@ -357,6 +365,18 @@ h3 {
 .hero-store-text { display: flex; flex-direction: column; gap: 1px; }
 .hero-store-sub { font-size: .62rem; font-weight: 400; opacity: .75; }
 .hero-store-name { font-size: .95rem; font-weight: 700; line-height: 1.2; }
+
+/* Telegram button override inside hero */
+.section-hero .btn-ghost {
+  background: #fff;
+  color: #c8620a;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,.15);
+}
+.section-hero .btn-ghost:hover {
+  background: #0088cc;
+  color: #fff;
+}
 
 /* ══════════════════════ SCREENSHOTS ══════════════════════ */
 
