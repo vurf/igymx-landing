@@ -275,7 +275,7 @@ h3 {
 /* ══════════════════════ HERO ══════════════════════ */
 
 .section-hero {
-  background: linear-gradient(145deg, #ffbe2e 0%, #f5960a 40%, #d4680c 75%, #9e3d00 100%);
+  background: linear-gradient(140deg, #0d1fa3 0%, #1e40af 35%, #c2720a 68%, #f5a623 100%);
   padding: clamp(4rem, 10vw, 8rem) 0 clamp(3.5rem, 8vw, 7rem);
 }
 
