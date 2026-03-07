@@ -99,11 +99,12 @@ h3 {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 100;
   background: rgba(244,247,252,.93);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(167,184,212,.22);
+  box-shadow: 0 1px 0 rgba(0,0,0,.08);
 }
 
 .header-row {
@@ -117,6 +118,7 @@ h3 {
   font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: -0.02em;
+  color: #0f1828;
 }
 
 .desktop-nav {
@@ -129,13 +131,20 @@ h3 {
 .desktop-nav a,
 .footer-links a,
 .mobile-menu a {
-  color: #2f3b53;
+  color: #1a2540;
   font-weight: 600;
   font-size: .925rem;
-  transition: color var(--transition);
+  transition: color var(--transition), text-decoration-color var(--transition);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
 }
 
-.desktop-nav a:hover { color: var(--accent); opacity: 1; }
+.desktop-nav a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+  opacity: 1;
+}
 
 .header-cta {
   display: flex;
@@ -217,8 +226,10 @@ h3 {
 .menu-toggle {
   display: none;
   margin-left: auto;
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  min-width: 44px;
+  min-height: 44px;
   border: 1px solid var(--border);
   background: #fff;
   border-radius: 12px;
