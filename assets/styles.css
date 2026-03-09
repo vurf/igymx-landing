@@ -457,14 +457,17 @@ h3 {
 .hero-store-sub { font-size: .62rem; font-weight: 400; opacity: .75; }
 .hero-store-name { font-size: .95rem; font-weight: 700; line-height: 1.2; }
 
-/* Telegram button in hero — brand blue gradient (overrides .btn-ghost) */
-.section-hero .btn-ghost {
+/* Telegram button — brand blue gradient in hero and CTA (overrides .btn-ghost) */
+.section-hero .btn-ghost,
+.section-cta .btn-ghost {
   background: var(--gradient-tg);
+  background-color: #2563d4; /* solid fallback */
   color: #fff;
   border: 1.5px solid rgba(255,255,255,.28);
   box-shadow: 0 4px 20px rgba(37,99,212,.50);
 }
-.section-hero .btn-ghost:hover {
+.section-hero .btn-ghost:hover,
+.section-cta .btn-ghost:hover {
   box-shadow: 0 6px 28px rgba(37,99,212,.70);
   transform: translateY(-2px);
 }
@@ -749,8 +752,8 @@ h3 {
   padding: 0 1rem;
   border-radius: 999px;
   border: 1.5px solid rgba(255,255,255,.30);
-  background-color: rgba(30,18,70,.85);
-  background: rgba(255,255,255,.10);
+  /* Solid dark-glass bg — looks correct even when backdrop-filter is skipped */
+  background: rgba(30,18,70,.72);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   font: inherit;
@@ -776,9 +779,12 @@ h3 {
 
 /* Override iOS Safari autofill blue background */
 .notify-input:-webkit-autofill,
-.notify-input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 1000px rgba(30,18,70,.95) inset;
+.notify-input:-webkit-autofill:hover,
+.notify-input:-webkit-autofill:focus,
+.notify-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 9999px rgba(30,18,70,.95) inset;
   -webkit-text-fill-color: #fff;
+  caret-color: #fff;
   transition: background-color 5000s ease-in-out 0s;
 }
 
