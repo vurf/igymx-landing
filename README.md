@@ -15,5 +15,8 @@
 - Support URL: `https://igymx.ru/#support`
 - Privacy Policy URL: `https://igymx.ru/privacy.html`
 
-## TODO
-- Заменить `#` у App Store CTA на реальную ссылку после публикации приложения.
+## Стиль
+Дизайн-система **Heavy Light**: тёмный фон с двумя signature-glow (volt-синий + plasma-фиолет), Inter Display 800 для заголовков, моноширинные цифры для трекинговых данных, единый акцент `#C9FF3E` для PR/рекордов.
+
+## Шрифты
+Inter подключается с `https://rsms.me/inter/inter.css` — без self-host.

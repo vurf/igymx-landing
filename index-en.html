@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>iGym X: Strength Tracker</title>
-  <meta name="description" content="iGym X — simple strength training tracker for iPhone: sets, weights, rest timer, and progress.">
+  <meta name="description" content="iGym X — precise strength training tracker for iPhone. Sets, weights, rest timer, progress. No subscriptions, no logins.">
 
   <!-- Canonical & hreflang -->
   <link rel="canonical" href="https://igymx.ru/index-en.html">
@@ -13,23 +13,23 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="iGym X: Strength Tracker">
-  <meta property="og:description" content="Simple strength training tracker: sets, weights, rest, and progress.">
+  <meta property="og:description" content="Precise sets, weights and progress for iPhone. No subscriptions.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://igymx.ru/index-en.html">
-  <meta property="og:image" content="https://igymx.ru/assets/og-image.svg">
+  <meta property="og:image" content="https://igymx.ru/assets/iGymX-big.png">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="iGym X: Strength Tracker">
-  <meta name="twitter:description" content="Simple strength training tracker: sets, weights, rest, and progress.">
-  <meta name="twitter:image" content="https://igymx.ru/assets/og-image.svg">
+  <meta name="twitter:description" content="Precise sets, weights and progress for iPhone. No subscriptions.">
+  <meta name="twitter:image" content="https://igymx.ru/assets/iGymX-big.png">
   <meta name="apple-itunes-app" content="app-id=6759258469">
 
   <!-- Favicon & theme -->
   <link rel="icon" href="assets/iGymX-big.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/iGymX-big.png">
-  <meta name="theme-color" content="#1b6bff">
+  <meta name="theme-color" content="#08090C">
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -45,12 +45,23 @@
   }
   </script>
 
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+  <link rel="preload" as="image" href="assets/img/igymx-screen-1.png">
+
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+  <div class="bg-field"></div>
+  <div class="bg-grid"></div>
+
   <header class="site-header">
     <div class="container header-row">
-      <a class="brand" href="/index-en.html">iGym X</a>
+      <a class="brand" href="/">
+        <img class="brand-mark" src="assets/iGymX-big.png" alt="">
+        <span>iGym X</span>
+      </a>
 
       <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#how">How it works</a>
@@ -60,12 +71,11 @@
       </nav>
 
       <div class="header-cta desktop-actions">
-        <div class="lang-switch" role="group" aria-label="Language switcher">
+        <div class="lang-switch" role="group" aria-label="Language switch">
           <a href="index.html" lang="ru">RU</a>
           <a class="active" href="index-en.html" aria-current="page">EN</a>
         </div>
-        <a class="btn btn-primary" href="https://apps.apple.com/us/app/igym-x-%D1%81%D0%B8%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%82%D1%80%D0%B5%D0%BA%D0%B5%D1%80/id6759258469" aria-label="Download on the App Store">App Store</a>
-        <a class="btn btn-secondary" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/igym-x-%D1%81%D0%B8%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%82%D1%80%D0%B5%D0%BA%D0%B5%D1%80/id6759258469">Download</a>
       </div>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
@@ -79,9 +89,8 @@
         <a href="#features">Features</a>
         <a href="#faq">FAQ</a>
         <a href="#support">Support</a>
-        <a class="btn btn-primary" href="https://apps.apple.com/us/app/igym-x-%D1%81%D0%B8%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%82%D1%80%D0%B5%D0%BA%D0%B5%D1%80/id6759258469" aria-label="Download on the App Store">App Store</a>
-        <a class="btn btn-secondary" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
-        <div class="lang-switch" role="group" aria-label="Language switcher">
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/igym-x-%D1%81%D0%B8%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%82%D1%80%D0%B5%D0%BA%D0%B5%D1%80/id6759258469">Download on App Store</a>
+        <div class="lang-switch" role="group" aria-label="Language switch">
           <a href="index.html" lang="ru">RU</a>
           <a class="active" href="index-en.html" aria-current="page">EN</a>
         </div>
@@ -91,22 +100,106 @@
 
   <main>
     <!-- HERO -->
-    <section class="section section-hero">
-      <div class="container hero-content">
-        <img src="assets/iGymX-big.png" alt="iGym X app icon" class="hero-app-icon">
-        <h1>Strength training — without the noise</h1>
-        <p>A sets, weights & progress tracker for iPhone. Works offline, syncs with Apple Health.</p>
-        <div class="hero-actions">
-          <a class="hero-store-btn" href="https://apps.apple.com/us/app/igym-x-%D1%81%D0%B8%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%82%D1%80%D0%B5%D0%BA%D0%B5%D1%80/id6759258469" aria-label="Download on the App Store">
-            <svg class="hero-store-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-            </svg>
-            <span class="hero-store-text">
-              <span class="hero-store-sub">Download on the</span>
-              <span class="hero-store-name">App Store</span>
-            </span>
-          </a>
-          <a class="btn btn-ghost" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <div class="eyebrow reveal d1">
+              <span class="eyebrow-dot"></span>
+              Strength Tracker · iOS
+            </div>
+
+            <h1 class="hero-h1 reveal d2">
+              Train like<br>
+              <span class="gradient-text">an engineer.</span>
+            </h1>
+
+            <p class="hero-sub reveal d3">
+              iGym X — precise sets, weights, and progress on iPhone.
+              No subscriptions, no logins, no internet required.
+            </p>
+
+            <div class="hero-actions reveal d4">
+              <a class="btn-store" href="https://apps.apple.com/us/app/igym-x-%D1%81%D0%B8%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%82%D1%80%D0%B5%D0%BA%D0%B5%D1%80/id6759258469" aria-label="Download on App Store">
+                <span class="btn-store-sub">Download on the</span>
+                <span class="btn-store-name">App Store</span>
+              </a>
+              <a class="btn-tg" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
+            </div>
+
+            <div class="hero-trust reveal d5">
+              <span>No subscriptions</span>
+              <span class="trust-dot" aria-hidden="true"></span>
+              <span>No ads</span>
+              <span class="trust-dot" aria-hidden="true"></span>
+              <span>Apple Health</span>
+              <span class="trust-dot" aria-hidden="true"></span>
+              <span>iPhone only</span>
+            </div>
+          </div>
+
+          <div class="hero-stage reveal d3" aria-hidden="true">
+            <div class="iphone">
+              <div class="iphone-frame">
+                <div class="iphone-island"></div>
+                <img class="iphone-screen" src="assets/img/igymx-screen-1.png" alt="iGym X active workout screen">
+              </div>
+            </div>
+
+            <div class="float-card float-pr">
+              <div class="float-pr-icon">↑</div>
+              <div>
+                <div class="float-pr-title">PR +5 lb</div>
+                <div class="float-pr-sub">Bench Press</div>
+              </div>
+            </div>
+
+            <div class="float-card float-timer">
+              <div>
+                <div class="float-timer-num" id="live-timer">01:32</div>
+                <div class="float-timer-sub">
+                  <span class="float-timer-dot"></span>
+                  Rest between sets
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-strip reveal d5">
+          <span><span class="check">✓</span> Free</span>
+          <span><span class="check">✓</span> No sign-up</span>
+          <span><span class="check">✓</span> Works offline</span>
+          <span><span class="check">✓</span> Apple Health</span>
+          <span><span class="check">✓</span> iPhone only</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section section-stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat reveal d1">
+            <div class="stat-num">01:32</div>
+            <div class="stat-divider"></div>
+            <div class="stat-label">Avg. rest</div>
+          </div>
+          <div class="stat reveal d2">
+            <div class="stat-num">3</div>
+            <div class="stat-divider"></div>
+            <div class="stat-label">Taps per set</div>
+          </div>
+          <div class="stat reveal d3">
+            <div class="stat-num">100%</div>
+            <div class="stat-divider"></div>
+            <div class="stat-label">Offline</div>
+          </div>
+          <div class="stat reveal d4">
+            <div class="stat-num">$0</div>
+            <div class="stat-divider"></div>
+            <div class="stat-label">Forever</div>
+          </div>
         </div>
       </div>
     </section>
@@ -115,30 +208,25 @@
     <section class="section section-how" id="how">
       <div class="container">
         <div class="section-head center">
-          <h2>How it works</h2>
-          <p>Three steps — from your first session to consistent progress.</p>
+          <span class="eyebrow"><span class="eyebrow-dot"></span> How it works</span>
+          <h2>Three steps to steady progress</h2>
+          <p>From your first workout to personal records — no setup hell, no jargon.</p>
         </div>
         <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-number">1</div>
-            <div>
-              <h3>Set up your workout</h3>
-              <p>Add exercises, define sets and target weights for each movement.</p>
-            </div>
+          <div class="step reveal d1">
+            <div class="step-num">01</div>
+            <h3>Build a program</h3>
+            <p>Add exercises, set the number of sets and target weight. Templates included.</p>
           </div>
-          <div class="step-card">
-            <div class="step-number">2</div>
-            <div>
-              <h3>Train smarter</h3>
-              <p>Log reps and weight in a few taps, then let the rest timer keep your pace.</p>
-            </div>
+          <div class="step reveal d2">
+            <div class="step-num">02</div>
+            <h3>Train</h3>
+            <p>Log working numbers in a couple of taps. The rest timer keeps the pace.</p>
           </div>
-          <div class="step-card">
-            <div class="step-number">3</div>
-            <div>
-              <h3>Track your progress</h3>
-              <p>Review your strength trends, compare sessions, and hit new personal records.</p>
-            </div>
+          <div class="step reveal d3">
+            <div class="step-num">03</div>
+            <h3>Track progress</h3>
+            <p>Watch the dynamics, compare sessions, beat your personal records.</p>
           </div>
         </div>
       </div>
@@ -148,76 +236,92 @@
     <section class="section section-screens">
       <div class="container">
         <div class="section-head">
-          <h2>See it in Action</h2>
-          <p>Scroll through screenshots to preview the core app flow.</p>
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Interface</span>
+          <h2>Built for training, not for scrolling</h2>
         </div>
         <div class="screens-track" aria-label="iGym X screenshots carousel">
           <article class="screen-card">
-            <img src="assets/img/igymx-screen-1.png" alt="Active workout screen with exercise, reps, and finish set action" loading="lazy">
+            <img src="assets/img/igymx-screen-1.png" alt="Active workout screen with exercise, reps and finish-set button" loading="lazy">
           </article>
           <article class="screen-card">
             <img src="assets/img/igymx-screen-2.png" alt="Progress screen with workout history and activity chart" loading="lazy">
           </article>
           <article class="screen-card">
-            <img src="assets/img/igymx-screen-3.png" alt="Workout program selection screen with recommended plans" loading="lazy">
+            <img src="assets/img/igymx-screen-3.png" alt="Program selection screen with recommendations" loading="lazy">
           </article>
           <article class="screen-card">
             <img src="assets/img/igymx-screen-4.png" alt="Goal selection screen tailored to the user" loading="lazy">
           </article>
         </div>
         <div class="screens-footer">
-          <p class="swipe-hint">Swipe to explore →</p>
+          <p class="swipe-hint">Swipe to see more →</p>
           <div class="carousel-dots" id="screen-dots" aria-hidden="true"></div>
         </div>
       </div>
     </section>
 
-    <!-- FEATURES -->
+    <!-- FEATURES BENTO -->
     <section class="section section-features" id="features">
       <div class="container">
-        <div class="section-head">
-          <h2>Features</h2>
+        <div class="section-head center">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Features</span>
+          <h2>Eight things that just work</h2>
         </div>
-        <div class="features-grid">
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">🏋️</span>
-            <h3>Workouts &amp; plans</h3>
-            <p>Build and reuse training templates for your goals.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">🔢</span>
-            <h3>Sets / reps / weight</h3>
-            <p>Log key values in a few taps during each set.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">⏱️</span>
-            <h3>Rest timer</h3>
-            <p>Keep your pace between sets with a built-in timer.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">🗂️</span>
-            <h3>Workout history</h3>
-            <p>Review past sessions and compare your performance.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">📈</span>
-            <h3>Progress</h3>
-            <p>Track strength trends and consistency over time.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">📏</span>
-            <h3>Measurements</h3>
-            <p>Store body stats and monitor physical changes.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">🌙</span>
-            <h3>Dark mode</h3>
-            <p>Comfortable viewing in bright and low-light settings.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">❤️</span>
+
+        <div class="bento">
+          <article class="bento-cell bento-l reveal d1">
+            <div class="bento-icon">♥</div>
             <h3>Apple Health</h3>
-            <p>Fitness data sync happens only with your permission.</p>
+            <p>Fitness data syncs only with your permission. Workouts land in Health automatically — no duplicates, no noise.</p>
+          </article>
+
+          <article class="bento-cell bento-m reveal d2">
+            <div class="bento-icon">№</div>
+            <h3>Sets & weights</h3>
+            <p>Log everything in two taps.</p>
+            <div class="bento-numbers">80 × 8</div>
+          </article>
+
+          <article class="bento-cell bento-m reveal d3">
+            <div class="bento-icon">⏱</div>
+            <h3>Rest timer</h3>
+            <p>Hold the pace between sets.</p>
+            <div class="bento-ring"></div>
+          </article>
+
+          <article class="bento-cell bento-s reveal d2">
+            <div class="bento-icon">≡</div>
+            <h3>Workouts & plans</h3>
+            <p>Create programs that fit your goals.</p>
+          </article>
+
+          <article class="bento-cell bento-s reveal d3">
+            <div class="bento-icon">↗</div>
+            <h3>Progress</h3>
+            <p>Strength dynamics over time.</p>
+            <div class="bento-gauge"></div>
+          </article>
+
+          <article class="bento-cell bento-s reveal d4">
+            <div class="bento-icon">⌖</div>
+            <h3>Workout history</h3>
+            <p>Return to your best sessions.</p>
+          </article>
+
+          <article class="bento-cell bento-s reveal d4">
+            <div class="bento-icon">▦</div>
+            <h3>Body measurements</h3>
+            <p>Track shape and changes.</p>
+            <div class="bento-bars">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </article>
+
+          <article class="bento-cell bento-s reveal d5">
+            <div class="bento-icon">◐</div>
+            <h3>Dark mode</h3>
+            <p>Comfortable any time of day.</p>
+            <div class="bento-moon"></div>
           </article>
         </div>
       </div>
@@ -227,53 +331,54 @@
     <section class="section section-faq" id="faq">
       <div class="container narrow">
         <div class="section-head center">
-          <h2>FAQ</h2>
+          <span class="eyebrow"><span class="eyebrow-dot"></span> FAQ</span>
+          <h2>Frequently asked</h2>
         </div>
 
         <div class="faq" data-accordion>
           <article class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-en-1" id="faq-btn-en-1">
-              <span>Where can I download iGym X?</span><span class="chevron" aria-hidden="true"></span>
+              <span>Where can I download iGym X?</span><span class="faq-toggle" aria-hidden="true"></span>
             </button>
             <div id="faq-en-1" class="faq-answer" role="region" aria-labelledby="faq-btn-en-1">
-              <p>The app is awaiting App Store review. Follow our Telegram channel — we'll announce the moment it goes live.</p>
+              <p>iGym X is available on the App Store. Subscribe to our Telegram channel for updates and new programs.</p>
             </div>
           </article>
           <article class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-en-2" id="faq-btn-en-2">
-              <span>Does the app sync with Apple Health?</span><span class="chevron" aria-hidden="true"></span>
+              <span>Is there Apple Health sync?</span><span class="faq-toggle" aria-hidden="true"></span>
             </button>
             <div id="faq-en-2" class="faq-answer" role="region" aria-labelledby="faq-btn-en-2">
-              <p>Yes, via HealthKit and only after explicit permission in iOS settings.</p>
+              <p>Yes, via HealthKit and only after you explicitly grant permission in iOS Settings.</p>
             </div>
           </article>
           <article class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-en-3" id="faq-btn-en-3">
-              <span>Do I need internet to log workouts?</span><span class="chevron" aria-hidden="true"></span>
+              <span>Do I need internet to train?</span><span class="faq-toggle" aria-hidden="true"></span>
             </button>
             <div id="faq-en-3" class="faq-answer" role="region" aria-labelledby="faq-btn-en-3">
-              <p>Core workout tracking works fully locally — no internet needed.</p>
+              <p>No. All key tracking features work fully offline.</p>
             </div>
           </article>
           <article class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-en-4" id="faq-btn-en-4">
-              <span>How can I delete my data?</span><span class="chevron" aria-hidden="true"></span>
+              <span>How do I delete my data?</span><span class="faq-toggle" aria-hidden="true"></span>
             </button>
             <div id="faq-en-4" class="faq-answer" role="region" aria-labelledby="faq-btn-en-4">
-              <p>You can delete data in the app or send a deletion request to <a href="mailto:support@igymx.ru">support@igymx.ru</a>.</p>
+              <p>You can delete data inside the app or send a request to <a href="mailto:support@igymx.ru">support@igymx.ru</a>.</p>
             </div>
           </article>
           <article class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-en-5" id="faq-btn-en-5">
-              <span>Which devices are supported?</span><span class="chevron" aria-hidden="true"></span>
+              <span>Which devices are supported?</span><span class="faq-toggle" aria-hidden="true"></span>
             </button>
             <div id="faq-en-5" class="faq-answer" role="region" aria-labelledby="faq-btn-en-5">
-              <p>iPhone running modern iOS versions. iPad and macOS are on the roadmap.</p>
+              <p>iPhone with current iOS. iPad and macOS support is on the roadmap.</p>
             </div>
           </article>
           <article class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-en-6" id="faq-btn-en-6">
-              <span>How can I contact support?</span><span class="chevron" aria-hidden="true"></span>
+              <span>How do I contact support?</span><span class="faq-toggle" aria-hidden="true"></span>
             </button>
             <div id="faq-en-6" class="faq-answer" role="region" aria-labelledby="faq-btn-en-6">
               <p>Email <a href="mailto:support@igymx.ru">support@igymx.ru</a> or message us on Telegram: <a href="https://t.me/igymx" target="_blank" rel="noopener">@igymx</a>.</p>
@@ -283,71 +388,63 @@
       </div>
     </section>
 
-    <!-- NOTIFY / WAITLIST -->
+    <!-- NOTIFY -->
     <section class="section section-notify">
-      <div class="notify-content">
-        <h2>Don't miss the launch</h2>
-        <p>Leave your email — we'll let you know the moment iGym X hits the App Store.</p>
-        <!-- TODO: replace FORM_ID with your Formspree form ID -->
-        <form class="notify-form" action="https://formspree.io/f/FORM_ID" method="POST">
-          <input class="notify-input" type="email" name="email" placeholder="you@example.com" required autocomplete="email">
-          <button class="notify-btn" type="submit">Notify me</button>
-        </form>
-        <div class="notify-divider">or</div>
-        <a class="btn btn-secondary" href="https://t.me/igymx" target="_blank" rel="noopener" style="margin: 0 auto;">Follow on Telegram</a>
+      <div class="container">
+        <div class="notify-content">
+          <span class="notify-eyebrow">Updates channel</span>
+          <h2>Be the first to know about new programs</h2>
+          <p>Once a month on Telegram we share new features, training programs, and app updates. No spam.</p>
+          <a class="notify-tg" href="https://t.me/igymx" target="_blank" rel="noopener">Subscribe to @igymx</a>
+        </div>
       </div>
     </section>
 
     <!-- CTA -->
     <section class="section section-cta">
       <div class="container cta-content">
-        <h2>Ready to train consistently?</h2>
-        <p>Install iGym X and keep your strength progress structured and clear.</p>
+        <span class="eyebrow"><span class="eyebrow-dot"></span> Start today</span>
+        <h2>Ready to train <span class="gradient-text">systematically</span>?</h2>
+        <p>Install iGym X and run your strength sessions without the bloat.</p>
         <div class="hero-actions">
-          <a class="hero-store-btn" href="https://apps.apple.com/us/app/igym-x-%D1%81%D0%B8%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%82%D1%80%D0%B5%D0%BA%D0%B5%D1%80/id6759258469" aria-label="Download on the App Store">
-            <svg class="hero-store-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-            </svg>
-            <span class="hero-store-text">
-              <span class="hero-store-sub">Download on the</span>
-              <span class="hero-store-name">App Store</span>
-            </span>
+          <a class="btn-store" href="https://apps.apple.com/us/app/igym-x-%D1%81%D0%B8%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9-%D1%82%D1%80%D0%B5%D0%BA%D0%B5%D1%80/id6759258469" aria-label="Download on App Store">
+            <span class="btn-store-sub">Download on the</span>
+            <span class="btn-store-name">App Store</span>
           </a>
-          <a class="btn btn-ghost" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
-        </div>
-        <div class="cta-pills">
-          <span class="cta-pill"><span class="cta-pill-icon">✓</span> Free</span>
-          <span class="cta-pill"><span class="cta-pill-icon">✓</span> No sign-up</span>
-          <span class="cta-pill"><span class="cta-pill-icon">✓</span> Works offline</span>
-          <span class="cta-pill"><span class="cta-pill-icon">✓</span> iPhone only</span>
+          <a class="btn-tg" href="https://t.me/igymx" target="_blank" rel="noopener">Telegram</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer" id="support">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <img src="assets/iGymX-big.png" alt="" class="footer-brand-icon" aria-hidden="true">
-        <div>
-          <span class="footer-brand-name">iGym X</span>
-          <p class="footer-brand-tagline">Strength tracker for iPhone</p>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand-block">
+          <a class="brand" href="/">
+            <img class="brand-mark" src="assets/iGymX-big.png" alt="">
+            <span>iGym X</span>
+          </a>
+          <p class="footer-brand-tagline">A precise strength tracker for iPhone. Workouts, progress and PRs — without subscriptions.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="mailto:support@igymx.ru">support@igymx.ru</a>
+          <a href="https://t.me/igymx" target="_blank" rel="noopener">Telegram @igymx</a>
+          <p>Include iPhone model, iOS version and app version.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Documents</h4>
+          <a href="/privacy-en.html">Privacy Policy</a>
+          <a href="/terms-en.html">Terms of Service</a>
         </div>
       </div>
 
-      <section class="support-block" aria-labelledby="support-title">
-        <h2 id="support-title">Support</h2>
-        <p>Email: <a href="mailto:support@igymx.ru">support@igymx.ru</a></p>
-        <p>Telegram: <a href="https://t.me/igymx" target="_blank" rel="noopener">@igymx</a></p>
-        <p>Include your iPhone model, iOS version, and app version.</p>
-      </section>
-
-      <div class="footer-right">
-        <nav class="footer-links" aria-label="Footer links">
-          <a href="/privacy-en.html">Privacy Policy</a>
-          <a href="/terms-en.html">Terms of Use</a>
-        </nav>
-        <p class="footer-copy">Made with ❤️ &nbsp;·&nbsp; © 2026 iGym X</p>
+      <div class="footer-bottom">
+        <span>© 2026 iGym X · Made with care</span>
+        <span><a href="index.html">Русская версия</a></span>
       </div>
     </div>
   </footer>
